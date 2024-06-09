@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-custom p-5">
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-custom">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Sign Up Success!
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-white">Account Created.</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Continue
+            </button>
+            <a href="sign-in.html"
+              ><button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+                id="modal-btn"
+              >
+                Log In
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section
+      id="signup"
+      class="bg-custom rounded p-5 m-auto d-flex align-items-center justify-content-center flex-column"
+    >
+      <h1>Smart Login System</h1>
+      <input
+        type="text"
+        class="form-control bg-transparent text-white my-3"
+        placeholder="Enter your name"
+        id="signup-name"
+      />
+      <input
+        type="email"
+        class="form-control bg-transparent text-white"
+        placeholder="Enter your email"
+        id="signup-email"
+      />
+      <input
+        type="password"
+        class="form-control bg-transparent text-white my-3"
+        placeholder="Enter your password"
+        id="signup-password"
+      />
+      <p
+        class="border border-danger p-2 text-danger rounded w-100 text-center d-none"
+        id="all-inputs"
+      >
+        All inputs required
+      </p>
+      <p
+        class="border border-danger p-2 text-danger rounded w-100 text-center d-none"
+        id="used-email"
+      >
+        Email already used
+      </p>
+
+      <button
+        class="btn w-100 my-2"
+        id="signup-btn"
+        data-bs-target="#exampleModal"
+      >
+        Sign Up
+      </button>
+
+      <p class="text-white mt-2">
+        You have an account? <a href="sign-in.html">Sign In</a>
+      </p>
+    </section>
+
+    <script src="js/sign-up.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

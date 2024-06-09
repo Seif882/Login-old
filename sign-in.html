@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-custom p-5">
+    <section
+      id="signin"
+      class="bg-custom rounded p-5 m-auto d-flex align-items-center justify-content-center flex-column"
+    >
+      <h1>Smart Login System</h1>
+      <input
+        type="text"
+        class="form-control bg-transparent text-white mt-3"
+        placeholder="Enter your email"
+        id="signin-email"
+      />
+      <input
+        type="password"
+        class="form-control bg-transparent text-white my-3"
+        placeholder="Enter your password"
+        id="signin-password"
+      />
+      <p
+        class="border border-danger p-2 text-danger rounded w-100 text-center d-none"
+        id="invalid-email"
+      >
+        Email Not Found
+      </p>
+
+      <p
+        class="border border-danger p-2 text-danger rounded w-100 text-center d-none"
+        id="invalid-password"
+      >
+        Incorrect Password
+      </p>
+
+      <a class="w-100" id="signin-btn"
+        ><button class="btn w-100 my-2">Log In</button></a
+      >
+
+      <p class="text-white mt-2">
+        Don't have an account? <a href="sign-up.html">Sign Up</a>
+      </p>
+    </section>
+
+    <script src="js/sign-in.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+href="home.html"

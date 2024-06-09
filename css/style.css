@@ -1,0 +1,45 @@
+:root {
+    --main-color: #17A2B8;
+}
+
+section {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    font-family: "Roboto", sans-serif !important;
+    width: 60%;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+input::placeholder {
+    color: rgb(200, 200, 200) !important;
+}
+
+section button {
+    border: 1px solid var(--main-color) !important;
+    color: var(--main-color) !important;
+}
+
+section button:hover {
+    background-color: var(--main-color) !important;
+    color: white !important;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bg-custom {
+    background-color: #24353F;
+}
